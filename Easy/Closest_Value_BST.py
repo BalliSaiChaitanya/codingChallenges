@@ -1,7 +1,7 @@
 #Recursive 
 #Average: time O(log(n)) space O(log(n)) 
 #Worst  : time O(n)      space O(n)
-def minDiff(root, K, closest=float("inf")):
+def minDiff(root, k, closest=float("inf")):
     if root is None:
         return abs(k-closest)
     if abs(k-closest) > abs(k-root.data):
@@ -16,7 +16,7 @@ def minDiff(root, K, closest=float("inf")):
 #Itearative
 #Average: time O(log(n)) space O(1) 
 #Worst  : time O(n)      space O(1)
-def minDiff(root, K, closest=float("inf")):
+def minDiff(root, k, closest=float("inf")):
     currentnode=root
     while currentnode is not None:
         if abs(closest-k) > abs(k-currentnode.data):
