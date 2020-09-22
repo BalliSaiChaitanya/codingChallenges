@@ -17,7 +17,7 @@ def bsHelper(array, target, left, right):
 
 # Iterative
 # O(log(n)) time | | O(1)
-def binarySearch(array,target,left,right):
+def binarySearch2(array,target,left,right):
     while left <= right:
         mid=(left+right)//2
         if array[mid] == target:

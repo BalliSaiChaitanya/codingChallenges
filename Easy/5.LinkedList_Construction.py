@@ -40,9 +40,9 @@ class doublyLinkedList:
             node.next.prev=nodeToInsert
         node.next=nodeToInsert
 
-    def insertAtPosition(seld, position, nodeToInsert):
+    def insertAtPosition(self, position, nodeToInsert):
         if position == 1:
-            setHead(nodeToInsert)\
+            self.setHead(nodeToInsert)
             return
         node=self.head
         currentPosition=1
@@ -73,7 +73,7 @@ class doublyLinkedList:
     def containsNodeWithValue(self,value):
         node=self.head
         while node is not None:
-            if node.value=value:
+            if node.value==value:
                 return True
             node=node.next 
         return None
