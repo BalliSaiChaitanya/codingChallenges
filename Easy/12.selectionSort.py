@@ -7,3 +7,4 @@ def selectionSort(array):
                 small=i
         array[small],array[ptr]=array[ptr],array[small]
         ptr += 1
+    return array
